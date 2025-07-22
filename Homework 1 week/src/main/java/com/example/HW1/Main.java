@@ -1,11 +1,7 @@
 package com.example.HW1;
 
 import com.example.HW1.abstract_classes.Animal;
-import com.example.HW1.classes.Fish;
-import com.example.HW1.classes.Mammal;
-import com.example.HW1.classes.Bear;
-import com.example.HW1.classes.Cat;
-import com.example.HW1.classes.Whale;
+import com.example.HW1.classes.*;
 
 public class Main {
     public static void main(String[] args) {
