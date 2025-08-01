@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
+
+    //МЕТОДЫ print() ДЛЯ ПРОВЕРКИ
+
     public static void main(String[] args) {
         MyHashSet<String> myHashSet = new MyHashSet<>();
         myHashSet.add("Red");
