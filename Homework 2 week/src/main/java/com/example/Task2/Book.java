@@ -1,7 +1,5 @@
 package com.example.Task2;
 
-import java.util.concurrent.LinkedTransferQueue;
-
 public class Book {
     String name;
     int numberOfPages;

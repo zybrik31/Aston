@@ -1,7 +1,6 @@
 package com.example.Task2;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Student {
     List<Book> books;
@@ -17,10 +16,28 @@ public class Student {
         return "Студент: " + name;
     }
 
-    public List<String> getBooks(){
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public List<String> getNameOfBooks(){
         List<String> nameOfBooks = books.stream()
-                .map(Book -> Book.name)
+                .map(book -> book.name)
                 .toList();
         return nameOfBooks;
+    }
+    
+    public List<Integer> getNumberOfPages(){
+        List<Integer> pagesOfBooks = books.stream()
+                .map(book -> book.numberOfPages)
+                .toList();
+        return pagesOfBooks;
+    }
+    
+    public List<Integer> getYearsOfBooks(){
+        List<Integer> yearsOfBooks = books.stream()
+                .map(book -> book.yearOfPublication)
+                .toList();
+        return yearsOfBooks;
     }
 }
