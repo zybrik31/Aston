@@ -4,7 +4,13 @@ import java.io.*;
 
 public class FileIO {
 
+    private String fileName;
     public FileIO(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 
     public String readFromFile(String fileName) throws FileIOExceptions {
