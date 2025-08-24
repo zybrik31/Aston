@@ -10,6 +10,9 @@ public class Main {
                 .build();
         intBuild.getName();
         intBuild.getData();
+        intBuild.append(7365);
+        intBuild.getData();
+
 
         Example<String> strBuild = new Example.BuilderEx<String>("Строки")
                 .append("Добавил")
